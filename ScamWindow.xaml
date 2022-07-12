@@ -4,9 +4,14 @@
         <StackPanel>
             <!-- The waifu message -->
             <StackPanel Name="WaifuMessage">
-                <TextBlock Text="H-hi senpai... i need to tell you something..." HorizontalAlignment="Center" />
-                <TextBlock Text="do you think that maybe... just maybe..." HorizontalAlignment="Center" />
-                <TextBlock Text="i can have all ur personal information &lt;\\\\&gt;" HorizontalAlignment="Center" />
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="H-hi senpai... i need to tell you something..." />
+                <TextBlock Text="do you think that maybe... just maybe..." />
+                <TextBlock Text="i can have all ur information &lt;\\\\&gt;" />
             </StackPanel>
 
             <Grid>
@@ -18,14 +23,30 @@
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.Resources>
                     <Style TargetType="TextBlock">
-                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Setter Property="HorizontalAlignment" Value="Left" />
                     </Style>
                 </Grid.Resources>
-                <TextBlock Text="Full name: " Grid.Row="0" Grid.Column="0" />
+
+                <TextBlock Text="First name: " Grid.Row="0" Grid.Column="0" />
                 <TextBox Grid.Row="0" Grid.Column="1" />
+
+                <TextBlock Text="Last name: " Grid.Row="1" Grid.Column="0" />
+                <TextBox Grid.Row="1" Grid.Column="1" />
+
+                <TextBlock Text="Credit card number: " Grid.Row="2" Grid.Column="0" />
+                <TextBox Grid.Row="2" Grid.Column="1" />
+
+                <TextBlock Text="Expiration Date: " Grid.Row="3" Grid.Column="0" />
+                <TextBox Grid.Row="3" Grid.Column="1" />
+
+                <TextBlock Text="Security code: " Grid.Row="4" Grid.Column="0" />
+                <TextBox Grid.Row="4" Grid.Column="1" />
             </Grid>
         </StackPanel>
     </StackPanel>
