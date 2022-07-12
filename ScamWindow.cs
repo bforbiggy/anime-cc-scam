@@ -15,11 +15,16 @@ using System.Windows.Shapes;
 
 namespace anime_cc_scam {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for ScamWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window {
-		public MainWindow() {
+	public partial class ScamWindow : Window {
+		public ScamWindow() {
 			InitializeComponent();
+		}
+
+		private void ScamWindowLoaded(object sender, RoutedEventArgs e) {
+			var window = Window.GetWindow(this);
+			//window.KeyDown += HandleKeyPress;
 		}
 	}
 }

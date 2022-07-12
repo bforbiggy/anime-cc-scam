@@ -1,3 +1,32 @@
-﻿<Window x:Class="anime_cc_scam.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:anime_cc_scam" mc:Ignorable="d" Title="MainWindow" Height="450" Width="800">
-    <Grid></Grid>
+﻿<Window x:Class="anime_cc_scam.ScamWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:anime_cc_scam" mc:Ignorable="d" Title="ScamWindow" Height="450" Width="600" Loaded="ScamWindowLoaded">
+    <StackPanel Orientation="Horizontal">
+        <Image Source="shy-anime.gif" />
+        <StackPanel>
+            <!-- The waifu message -->
+            <StackPanel Name="WaifuMessage">
+                <TextBlock Text="H-hi senpai... i need to tell you something..." HorizontalAlignment="Center" />
+                <TextBlock Text="do you think that maybe... just maybe..." HorizontalAlignment="Center" />
+                <TextBlock Text="i can have all ur personal information &lt;\\\\&gt;" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </Grid.Resources>
+                <TextBlock Text="Full name: " Grid.Row="0" Grid.Column="0" />
+                <TextBox Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </StackPanel>
+    </StackPanel>
 </Window>

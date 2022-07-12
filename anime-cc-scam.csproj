@@ -8,4 +8,7 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Resource Include="shy-anime.gif" />
+  </ItemGroup>
 </Project>
