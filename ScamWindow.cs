@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace anime_cc_scam {
 	/// <summary>
@@ -14,8 +15,12 @@ namespace anime_cc_scam {
 			//window.KeyDown += HandleKeyPress;
 		}
 
-		private void OnSubmit() {
-
+		private void OnSubmit(object sender, RoutedEventArgs e) {
+			TextBlock text = new TextBlock();
+			text.VerticalAlignment = VerticalAlignment.Center;
+			text.HorizontalAlignment = HorizontalAlignment.Center;
+			text.Text = "wtf?!?!?! down horrendous!?!?!?";
+			Content = text;
 		}
 	}
 }
